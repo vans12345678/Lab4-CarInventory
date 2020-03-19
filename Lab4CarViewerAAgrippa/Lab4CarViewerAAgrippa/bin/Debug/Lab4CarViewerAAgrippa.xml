@@ -1,0 +1,119 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Lab4CarViewerAAgrippa
+</name>
+</assembly>
+<members>
+<member name="T:Lab4CarViewerAAgrippa.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Lab4CarViewerAAgrippa.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Lab4CarViewerAAgrippa.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Lab4CarViewerAAgrippa.Car.#ctor(System.String,System.String,System.Int32,System.Decimal,System.Boolean)">
+ <summary>
+ Parametrizzed constructor for the car class. sets several instance variables based on values passed in
+ </summary>
+ <param name="makeValue"></param>
+ <param name="modelValue"></param>
+ <param name="yearValue"></param>
+ <param name="priceValue"></param>
+ <param name="statusValue"> boolean value indicating whether the car is new or not </param>
+</member>
+<member name="P:Lab4CarViewerAAgrippa.Car.Count">
+ <summary>
+ Returns the number of car objects
+ </summary>
+ <returns>the number of car objects</returns>
+</member>
+<member name="P:Lab4CarViewerAAgrippa.Car.ID">
+ <summary>
+ Get a car's ID
+ </summary>
+ <returns>A car's identification number</returns>
+</member>
+<member name="P:Lab4CarViewerAAgrippa.Car.Make">
+ <summary>
+ Gets and sets a car's object's manufacturer
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Lab4CarViewerAAgrippa.Car.Model">
+ <summary>
+ Get and sets a car's object model
+ </summary>
+ <returns> A car's model as string</returns>
+</member>
+<member name="P:Lab4CarViewerAAgrippa.Car.Year">
+ <summary>
+ Gets abd set's a car's object year
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Lab4CarViewerAAgrippa.Car.Price">
+ <summary>
+ Gets and sets a car's object price
+ </summary>
+ <returns>A car's price as a decimal value</returns>
+</member>
+<member name="P:Lab4CarViewerAAgrippa.Car.IsNew">
+ <summary>
+ Gets and set's a value indicating whether the car is new or not (used)
+ </summary>
+ <returns>True if the car is new; False if the car is used</returns>
+</member>
+<member name="M:Lab4CarViewerAAgrippa.frmCarViewer.btnExit_Click(System.Object,System.EventArgs)">
+ <summary>
+ Closes form without further action
+ </summary>
+</member>
+<member name="M:Lab4CarViewerAAgrippa.frmCarViewer.btnReset_Click(System.Object,System.EventArgs)">
+ <summary>
+ Returns form to default state by calling SetDefaults()
+ </summary>
+</member>
+<member name="M:Lab4CarViewerAAgrippa.frmCarViewer.btnEnter_Click(System.Object,System.EventArgs)">
+ <summary>
+ Will enter a new car entry to the list if the data is valid, otherwise will show errors
+ </summary>
+</member>
+<member name="M:Lab4CarViewerAAgrippa.frmCarViewer.lvwCars_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ Event handler for when a character is selected in the ListView
+ </summary>
+</member>
+<member name="M:Lab4CarViewerAAgrippa.frmCarViewer.lvwCars_ItemCheck(System.Object,System.Windows.Forms.ItemCheckEventArgs)">
+ <summary>
+ Stops you from checking a box
+ </summary>
+</member>
+<member name="M:Lab4CarViewerAAgrippa.frmCarViewer.SetDefaults">
+ <summary>
+ If the form has valid input, clear all entries and populate list 
+ </summary>
+</member>
+<member name="M:Lab4CarViewerAAgrippa.frmCarViewer.IsValidInput">
+ <summary>
+ The IsValidInput() function validates data in each control so that the all the data types are correct
+ </summary>
+ <returns>Boolean</returns>
+</member>
+<member name="M:Lab4CarViewerAAgrippa.frmCarViewer.PopulateList">
+ <summary>
+ This function clears and repopulates carItem ListView control
+ </summary>
+</member>
+</members>
+</doc>
